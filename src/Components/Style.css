@@ -1,0 +1,598 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h3 {
+    color: blueviolet;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.main {
+
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    /* background-color: aqua; */
+}
+
+.siren:hover {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+.main p {
+    transform: rotate(270deg);
+
+}
+
+.siren {
+    color: black;
+    font-size: 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+
+    margin: 30px 0 20px 0;
+    height: 30px;
+}
+
+a.active {
+    color: red;
+}
+
+.navlink {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navlink:hover {
+    color: red;
+    /* animation: navlink 1s linear; */
+    border-bottom: solid 4px #019fb6;
+
+    /* transform: scaleX(0); */
+    /* transition: transform 1s ease-in-out; */
+}
+
+.title {
+    display: inline-block;
+    border-bottom: 4px solid palevioletred;
+}
+
+.head {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    height: 70vh;
+    margin: 20px 0;
+    /* border: 2px solid black; */
+}
+
+.leftimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* color: white; */
+    width: 70%;
+    height: 100%;
+    background-image: url("https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712__340.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+
+
+.leftimg p {
+    color: white;
+}
+
+.rightimg {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 20px; */
+}
+
+
+.rightimg div {
+    width: 100%;
+    height: 48%;
+}
+
+.rightimg img {
+    width: 100%;
+    height: 100%;
+    /* padding: 10px;
+     */
+
+}
+
+.latestData {
+    width: 100%;
+    height: 80vh;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    /* margin: 20px 0 40px 0; */
+}
+
+.latestData div {
+    width: 25%;
+}
+
+.latestData h3,
+h5 {
+    margin: 10px 0;
+}
+
+.latestData h3,
+p,
+h5 {
+    color: black;
+}
+
+.articleData {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+.rightArticle {
+    width: 70%;
+    height: auto;
+}
+
+
+.articleimg {
+
+    width: 90%;
+    height: 50vh;
+    margin: auto;
+    background-image: url("https://cdn.pixabay.com/photo/2013/11/23/13/57/barn-216372_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* -----------------------------Article Component----------------------------------------------------- */
+.artflexparent {
+    width: 100%;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.artflex {
+    display: flex;
+    width: 100%;
+    min-height: 10%;
+    max-height: 14%;
+    gap: 2%;
+    margin: 30px 0;
+    color: black;
+    padding-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.artflex:hover {
+    /* opacity: 0.5; */
+    background-color: rgba(255, 235, 204, 0.4);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.artflex div:last-child {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.artflex div:first-child {
+    width: 30%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.artflex img {
+    width: 100%;
+    height: 100%;
+}
+
+.delete {
+    /* background-color: rgb(244, 4, 4); */
+    position: absolute;
+    border: none;
+    padding: 5px;
+    font-weight: 700;
+    border-radius: 10px;
+    z-index: 5;
+    right: 0px;
+    bottom: 0px;
+    padding: 5px 15px;
+}
+
+.delete:hover {
+    background: transparent;
+    color: black;
+    /* background-color: rgba(244, 4, 4, 0.2); */
+    border: 2px solid red;
+}
+
+/* --------------------------Sidebar------------------------ */
+.sideflex {
+    display: flex;
+    width: 100%;
+    min-height: 10%;
+    max-height: 14%;
+    gap: 2%;
+    margin: 20px 0;
+    color: black;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.sideflex div:last-child {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sideflex div:first-child {
+    width: 30%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sideflex img {
+    width: 100%;
+    height: 100%;
+}
+
+.leftArticle {
+    width: 30%;
+    height: auto;
+    padding: 1rem;
+}
+
+.advertisement {
+    width: 100%;
+    height: 600px;
+    border: 2px solid black;
+}
+
+.topStory {
+
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+    margin: 20px 0;
+
+}
+
+.topStory div {
+    overflow: hidden;
+    width: 25%;
+}
+
+.topStory h3 {
+    margin: 10px 0;
+}
+
+.blogPage {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 60%;
+    margin: auto;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addvertise {
+    width: 70%;
+    height: 500px;
+    margin: auto;
+    font-size: 100%;
+    color: brown;
+    border: 2px solid rgb(36, 184, 58);
+}
+
+/* ===new blog page ========= */
+.addblog h1 {
+    text-align: center;
+    color: blue;
+}
+
+
+/* =================================Media Querries============================= */
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: rgb(51, 209, 43);
+        /* background-color: rgb(50, 33, 201); */
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 20px 0;
+        height: auto;
+        line-height: 30px;
+    }
+
+    .head {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 100%;
+        height: 70vh;
+        margin: 20px 0;
+        /* border: 2px solid black; */
+    }
+
+    .leftimg {
+        width: 100%;
+        height: 50%;
+    }
+
+    .rightimg {
+        flex-direction: row;
+        width: 100%;
+        height: 50%;
+        gap: 20px;
+    }
+
+    .rightimg div {
+        height: 100%;
+    }
+
+    /* -------------Latest --------------------------*/
+
+    .latestData {
+        overflow: hidden;
+    }
+
+    .latestData img {
+        height: 150px;
+    }
+
+    /* ============Article =========================== */
+    .articleData {
+        flex-wrap: wrap;
+    }
+
+    .rightArticle {
+        width: 100%;
+    }
+
+    .leftArticle {
+        width: 100%;
+    }
+
+    .advertisement {
+        display: none;
+    }
+
+
+
+    /* ================Article component=============== */
+
+    /* ================top story================ */
+
+    .topStory {
+
+        height: 80vh;
+        gap: 2rem;
+
+    }
+
+
+    .topStory img {
+        height: 200px;
+    }
+
+    /* =============top story =================== */
+
+    /* ===========BlogPage ============ */
+
+    .blogPage {
+        align-items: center;
+        width: 80%;
+    }
+
+    .blogPage h1 {
+        font-size: 24px;
+    }
+
+    .blogPage img {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+/* =================================Media Querries (Less than 480)============================= */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        background-color: rgb(38, 142, 184);
+    }
+
+    .navbar {
+        /* display: flex; */
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 20px 0;
+        height: auto;
+        line-height: 30px;
+    }
+
+    .head {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        gap: 1rem;
+        width: 100%;
+        height: 100vh;
+        margin: 20px 0;
+        /* border: 2px solid black; */
+    }
+
+    .leftimg {
+        width: 100%;
+        height: 30%;
+        /* margin: 0; */
+        /* border: 2px solid rgb(193, 14, 14); */
+    }
+
+    .rightimg {
+        flex-direction: column;
+        /* border: 2px solid rgb(38, 14, 193); */
+        width: 100%;
+        height: 60%;
+        gap: 20px;
+    }
+
+    .rightimg div {
+        width: 100%;
+        height: 50%;
+    }
+
+    /* -------------Latest --------------------------*/
+
+    .latestData {
+        overflow: hidden;
+        flex-wrap: wrap;
+        height: auto;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+
+    .latestData img {
+        height: 200px;
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    /* .latestData div {
+        width: 100;
+        display: flex;
+    } */
+
+    /* ============Article =========================== */
+    .articleData {
+        flex-wrap: wrap;
+    }
+
+    .rightArticle {
+        width: 100%;
+    }
+
+    .leftArticle {
+        width: 100%;
+    }
+
+    .advertisement {
+        display: none;
+    }
+
+
+
+    /* ================Article component=============== */
+    .artflex {
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .artflex div:last-child {
+        width: 100%;
+        height: 50%;
+    }
+
+    .artflex div:first-child {
+        width: 100%;
+        height: 250px;
+    }
+
+
+    /* ================top story================ */
+
+    .topStory {
+        flex-wrap: wrap;
+        height: auto;
+        /* height: 80vh; */
+        gap: 2rem;
+
+    }
+
+    .topStory img {
+        /* height: 200px; */
+        height: 300px;
+        width: 100%;
+        padding: 0 30px;
+        border-radius: 50%;
+    }
+
+    /* =============top story  End=================== */
+
+    /* ===========BlogPage ============ */
+
+    .blogPage {
+        align-items: center;
+        width: 80%;
+    }
+
+    .blogPage h1 {
+        font-size: 24px;
+    }
+
+    .blogPage img {
+        width: 100%;
+        height: 200px;
+    }
+
+}

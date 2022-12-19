@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 30px auto;
+}
+
+body {
+  background-color: rgba(12, 112, 199, 0.6);
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+  .container {
+    width: 100vw;
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+  .container {
+    width: 100vw;
+    margin: 0;
+    padding: 10px;
+  }
+}
